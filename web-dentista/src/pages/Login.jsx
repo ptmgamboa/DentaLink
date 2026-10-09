@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 export default function Login() {
   return (
     <div className="min-h-screen bg-blue-50 flex items-center justify-center p-4">
@@ -24,12 +25,12 @@ export default function Login() {
             />
           </div>
           
-          <button 
-            type="button" 
-            className="w-full bg-blue-600 text-white p-2 rounded-md hover:bg-blue-700 transition duration-200 font-semibold"
+          <Link 
+            to="/agenda"
+            className="block text-center w-full bg-blue-600 text-white p-2 rounded-md hover:bg-blue-700 transition duration-200 font-semibold"
           >
             Iniciar Sesión
-          </button>
+          </Link>
         </form>
       </div>
     </div>
