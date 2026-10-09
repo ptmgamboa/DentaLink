@@ -1,17 +1,16 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Login from './pages/Login';
 import Agenda from './pages/Agenda';
+import Expediente from './pages/Expediente';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Redirige automáticamente la raíz al login */}
         <Route path="/" element={<Navigate to="/login" />} />
-        
-        {/* Rutas de las pantallas */}
         <Route path="/login" element={<Login />} />
         <Route path="/agenda" element={<Agenda />} />
+        <Route path="/expediente" element={<Expediente />} />
       </Routes>
     </BrowserRouter>
   );

@@ -12,9 +12,9 @@ export default function Agenda() {
           <Link to="/agenda" className="block p-3 bg-blue-700 rounded-lg hover:bg-blue-600 transition">
             📅 Agenda Inteligente
           </Link>
-          <button className="w-full text-left p-3 rounded-lg hover:bg-blue-700 transition">
+          <Link to="/expediente" className="block p-3 rounded-lg hover:bg-blue-700 transition text-left w-full">
             🦷 Expediente Clínico
-          </button>
+          </Link>
           <button className="w-full text-left p-3 rounded-lg hover:bg-blue-700 transition">
             📦 Inventario
           </button>
